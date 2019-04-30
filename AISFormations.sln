@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AISFormations.Web", "AISFormations.Web\AISFormations.Web.csproj", "{6F7D9B05-9D9F-4E65-8135-BA7CAA98125D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F7D9B05-9D9F-4E65-8135-BA7CAA98125D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7D9B05-9D9F-4E65-8135-BA7CAA98125D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7D9B05-9D9F-4E65-8135-BA7CAA98125D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7D9B05-9D9F-4E65-8135-BA7CAA98125D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96859F75-B03C-444F-887F-4C2FDF936C6F}
+	EndGlobalSection
+EndGlobal

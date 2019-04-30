@@ -1,0 +1,76 @@
+﻿@model AISFormations.Web.Models.Formation
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Formation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Titre" class="control-label"></label>
+                <input asp-for="Titre" class="form-control" />
+                <span asp-validation-for="Titre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Presentateur" class="control-label"></label>
+                <input asp-for="Presentateur" class="form-control" />
+                <span asp-validation-for="Presentateur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Code" class="control-label"></label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PublicCible" class="control-label"></label>
+                <input asp-for="PublicCible" class="form-control" />
+                <span asp-validation-for="PublicCible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateHeureDebut" class="control-label"></label>
+                <input asp-for="DateHeureDebut" class="form-control" />
+                <span asp-validation-for="DateHeureDebut" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DureeEnHeures" class="control-label"></label>
+                <input asp-for="DureeEnHeures" class="form-control" />
+                <span asp-validation-for="DureeEnHeures" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NombrePlacesDisponibles" class="control-label"></label>
+                <input asp-for="NombrePlacesDisponibles" class="form-control" />
+                <span asp-validation-for="NombrePlacesDisponibles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="EstActive" /> @Html.DisplayNameFor(model => model.EstActive)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<AISFormations.Web.Models.Formation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Titre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Presentateur)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublicCible)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateHeureDebut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DureeEnHeures)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombrePlacesDisponibles)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstActive)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Presentateur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublicCible)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateHeureDebut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DureeEnHeures)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombrePlacesDisponibles)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstActive)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

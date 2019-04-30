@@ -1,0 +1,17 @@
+﻿# add database migrations
+cd C:\Users\BELT03\source\repos\AISFormations\AISFormations.Web
+dotnet ef migrations add MigrationInitiale
+dotnet ef database update
+
+# source: 
+<https://stackoverflow.com/questions/42355481/auto-create-database-in-entity-framework-core>
+
+
+# using Queues in .net
+<https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1?view=netframework-4.8>
+
+
+# using the Azure Service Bus Queues SDK with .net core
+<https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues>
+
+
